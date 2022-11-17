@@ -15,11 +15,11 @@ The data set for the localization task can be found on <https://www.kaggle.com/c
 
 <details>
    <summary>Mobile Robot Platofrm</summary>
-   <p>![My Image](docs/img/Mobile_Robot_Platform.png)</p>
+   ![My Image](docs/img/Mobile_Robot_Platform.png)
 </details>
 
 <details>
    <summary>Sensor Floor Workflow</summary>
-   <p>![My Image](docs/img/Sensor_Floor_Workflow.png)</p>
+   ![My Image](docs/img/Sensor_Floor_Workflow.png)
 </details>
 
