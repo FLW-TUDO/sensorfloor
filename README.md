@@ -13,14 +13,11 @@ sudo apt-get install git python-pip owfs python-ow ow-shell
 
 The data set for the localization task can be found on <https://www.kaggle.com/c/summerschool2020/overview>. The mobile robot is equipped with transmitter and transmits periodic packet to all sensor floor nodes.
 
-Mobile Robot Platofrm
-```
+Mobile Robot Platform
 ![My Image](docs/img/Mobile_Robot_Platform.png)
-```
 
 Sensor Floor Workflow
-```
 ![My Image](docs/img/Sensor_Floor_Workflow.png)
-```
+
 
 
