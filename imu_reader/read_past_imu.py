@@ -37,7 +37,7 @@ RPi_IPs = [
 
 # dead_nodes are the nodes that cannot be flashed, probably due to a hardware problem
 # TODO this list should be removed whenever they get fixed
-dead_nodes = ['/29.47FC2F000000', '/29.C6F92F000000', '/29.7C0230000000', '/29.BC992F000000']
+dead_nodes = ['/29.47FC2F000000', '/29.C6F92F000000', '/29.7C0230000000', '/29.BC992F000000', '/29.27F52F000000', '/29.500530000000']
 
 def reader_worker(strip_id, strip_path_inorder, node_list, serial_handler, mqtt_connection_info):
     # strip id is important for constructing the topic
