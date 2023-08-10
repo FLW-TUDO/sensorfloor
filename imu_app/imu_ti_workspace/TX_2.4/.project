@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>robot_TX</name>
+	<name>TX_2.4</name>
 	<comment></comment>
 	<projects>
-		<project>tirtos_builds_CC1350STK_release_ccs_4_10_00_10</project>
 		<project>tirtos_builds_CC1350STK_release_ccs</project>
 	</projects>
 	<buildSpec>
@@ -30,7 +29,7 @@
 		<link>
 			<name>Board.html</name>
 			<type>1</type>
-			<locationURI>COM_TI_SIMPLELINK_CC13X0_SDK_INSTALL_DIR/source/ti/boards/CC1350STK/Board.html</locationURI>
+			<locationURI>COM_TI_SIMPLELINK_CC13X0_SDK_INSTALL_DIR/source/ti/boards/CC1350_LAUNCHXL/Board.html</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

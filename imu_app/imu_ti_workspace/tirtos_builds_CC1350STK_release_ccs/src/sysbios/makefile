@@ -18,11 +18,11 @@ CCOPTS = --endian=little -mv7M3 --abi=eabi -q -ms --opt_for_speed=0  --program_l
 
 BIOS_INC = -I"/home/gouda/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/"
 ANNEX_INCS =  -I/home/gouda/ti/simplelink_cc13x0_sdk_3_20_00_23/source/ti/posix/ccs
-INCS = $(BIOS_INC) $(ANNEX_INCS) -I"/home/gouda/ti/simplelink_cc13x0_sdk_3_20_00_23/source/" -I"/home/gouda/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/" -I"/home/gouda/ti/xdctools_3_51_03_28_core/packages/" -I"../" -I"/packages//"  -I/home/gouda/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include 
+INCS = $(BIOS_INC) $(ANNEX_INCS) -I"/home/gouda/ti/simplelink_cc13x0_sdk_3_20_00_23/source/" -I"/home/gouda/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/" -I"/home/gouda/ti/xdctools_3_51_03_28_core/packages/" -I"../" -I"/packages//"  -I/home/gouda/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include 
 
-CC = /home/gouda/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/bin/armcl -c $(CCOPTS)
-ASM = /home/gouda/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/bin/armcl -c $(CCOPTS)
-AR = /home/gouda/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/bin/armar rq
+CC = /home/gouda/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl -c $(CCOPTS)
+ASM = /home/gouda/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl -c $(CCOPTS)
+AR = /home/gouda/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armar rq
 
 DEL = rm -f
 CP = cp -f
