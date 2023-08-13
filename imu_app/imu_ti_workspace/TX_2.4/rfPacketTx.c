@@ -138,7 +138,7 @@ void *mainThread(void *arg0)
         curtime += PACKET_INTERVAL;
 
         RF_ble_cmdBleAdvNc.startTime = curtime;
-        terminationReason = RF_runScheduleCmd(rfBleHandle, (RF_Op*)&RF_ble_cmdBleAdvNc,
+        terminationReason = RF_runCmd(rfBleHandle, (RF_Op*)&RF_ble_cmdBleAdvNc,
                                               RF_PriorityNormal, txDoneCallback, 0);
 
         if(terminationReason & RF_EventCmdPreempted)
