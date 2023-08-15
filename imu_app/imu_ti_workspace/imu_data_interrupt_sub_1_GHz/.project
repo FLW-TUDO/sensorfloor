@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>imu_data_interrupt</name>
+	<name>imu_data_interrupt_sub_1_GHz</name>
 	<comment></comment>
 	<projects>
 		<project>tirtos_builds_CC1350STK_release_ccs</project>

@@ -18,16 +18,12 @@
 
 /* RF Headers */
 #include <ti/drivers/rf/RF.h>
-#include DeviceFamily_constructPath(driverlib/rf_prop_mailbox.h)
+#include DeviceFamily_constructPath(driverlib/rf_ble_mailbox.h)
 /* Application Header files */
 #include "RFQueue.h"
 #include "smartrf_settings/smartrf_settings_ble.h"
 
 /***** Defines *****/
-
-/* Packet RX Configuration */
-//#define PACKET_DATA_LENGTH               	  10 /* Packet for BLE5 cannot exceed 37 with header (10) */
-#define PACKET_INTERVAL      RF_convertMsToRatTicks(500) /* Set packet interval to 500ms */
 
 /* Events */
 #define START_PRINT_EVT         Event_Id_00
