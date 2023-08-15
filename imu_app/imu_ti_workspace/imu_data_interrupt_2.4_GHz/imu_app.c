@@ -172,6 +172,7 @@ void *mainThread(void *arg0)
     RF_ble_cmdBleGenericRx.pParams->pRxQ = &dataQueue;
     RF_ble_cmdBleGenericRx.pParams->bRepeat = 0;
     RF_ble_cmdBleGenericRx.pParams->rxConfig.bAutoFlushCrcErr = 1;
+    RF_ble_cmdBleGenericRx.pParams->rxConfig.bAutoFlushIgnored = 1;
 
     RF_ble_cmdBleGenericRx.pOutput = &rxStatistics;
 
