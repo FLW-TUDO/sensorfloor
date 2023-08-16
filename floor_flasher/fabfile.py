@@ -11,7 +11,6 @@ RPi_IPs = [
             {"column_num": 3, "ip_addr": "129.217.152.79", "mac_id": "b8:27:eb:18:92:c7", "hostname": "raspberrypi"},
             {"column_num": 4, "ip_addr": "129.217.152.54", "mac_id": "b8:27:eb:53:f2:33", "hostname": "raspberrypi"},
             {"column_num": 5, "ip_addr": "129.217.152.86", "mac_id": "b8:27:eb:e7:6f:dc", "hostname": "raspberrypi"},
-            # {"column_num": 6, "ip_addr": "129.217.152.110", "mac_id": "b8:27:eb:9b:69:9a", "hostname": "raspberrypi"},
             {"column_num": 6, "ip_addr": "129.217.152.89", "mac_id": "b8:27:eb:38:4b:07", "hostname": "raspberrypi"},
             {"column_num": 7, "ip_addr": "129.217.152.84", "mac_id": "b8:27:eb:1b:cf:26", "hostname": "raspberrypi"},
             {"column_num": 8, "ip_addr": "129.217.152.119", "mac_id": "b8:27:eb:6d:0e:53", "hostname": "raspberrypi"},
@@ -104,6 +103,11 @@ def turnoff():
 def save_log():
     with cd('~/sensorfloor/floor_flasher'):
         run('python save_log.py')
+
+@parallel
+def brokennodes():
+    with cd('/home/pi/sensorfloor/imu_reader/'):
+        run('git checkout read_past_imu.py')
 
 # /Users/akrv/Documents/dev/sensorfloor/imu_app/imu_ti_workspace/imu_data_interrupt/Release/imu_data_interrupt.bin
 
