@@ -13,7 +13,7 @@ def callback(data):
     j_msg = {
         'object': topic,
         'translation': [data.transform.translation.x, data.transform.translation.y, data.transform.translation.z],
-        'rotation': [data.transform.rotation.x, data.transform.rotation.y, data.transform.rotation.z],
+        'rotation': [data.transform.rotation.x, data.transform.rotation.y, data.transform.rotation.z, data.transform.rotation.w],
         'time': time()
     }
     with open("vicon_data.txt", "a+") as test_data:
@@ -26,6 +26,7 @@ def listener():
     rospy.init_node('listener', anonymous=True)
     rospy.Subscriber(topic, geometry_msgs.msg.TransformStamped, callback)
     rospy.spin()
+
 
 if __name__ == '__main__':
     listener()
