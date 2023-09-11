@@ -20,15 +20,15 @@ class MinimalSubscriber(Node):
             'rotation': [data.transform.rotation.x, data.transform.rotation.y, data.transform.rotation.z, data.transform.rotation.w],
             'time': time()
         }
-        with open("vicon_data_test_" + str(self.obj_name) + ".txt", "a+") as test_data:
+        with open("vicon_data_" + str(self.obj_name) + ".txt", "a+") as test_data:
             test_data.write(json.dumps(j_msg) + '\n')
         test_data.close()
 
 
 def listener():
     parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('topic', type=str, default='/rb1_base_d/vicon/pose', help="ROS topic name ex: /rb1_base_d/vicon/pose ")
-    parser.add_argument('name', type=str, default='robot_1', help="object name")
+    parser.add_argument('-topic', type=str, help="ROS topic name ex: /rb1_base_d/vicon/pose ")
+    parser.add_argument('-name', type=str, help="object name ex: robot_1")
     args = parser.parse_args()
 
     rclpy.init()
